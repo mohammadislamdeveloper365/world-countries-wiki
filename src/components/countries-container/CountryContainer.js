@@ -14,11 +14,12 @@ export default function CountryContainer() {
         })
 
     },[]);
-  return (
-    <div className='countries-container'>
-        {
-            countries.map(country=><CountryCard name={country.name.common} population={country.population} countryFlag={country.flags.png}/>)
-        }
-    </div>
+
+    return (
+        <div className='countries-container'>
+            {
+                countries.map(country=><CountryCard name={country.name.common} population={country.population} countryFlag={country.flags.png} alt={country.flags.alt}  key={country.cca2} continent={country.continents[0]} />)
+            }
+        </div>
   )
 }
