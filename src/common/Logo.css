@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+@keyframes logo-glow {
+  0% {
+   text-shadow:0.5rem 0.2rem 0.5rem red;
+  } 
+  
+  20% {
+    text-shadow:0.75rem 0.4rem 0.6rem rgb(202, 15, 193);
+  }
+
+  40% {
+    text-shadow:0.75rem 0.4rem 0.8rem brown;
+  }
+
+  60% {
+    text-shadow:0.75rem 0.4rem 0.9rem rgb(4, 255, 0);
+  }
+  80% {
+    text-shadow:1rem 0.6rem 1rem goldenrod;
+  }
+
+  100% {
+    text-shadow:1.25rem 0.8rem 1.2rem rgb(55, 0, 255);
+  }
+
+}
+
+.logo-container {
+    padding:0.5rem 1rem;
+    font-family: 'Philosopher', sans-serif;
+    font-style: oblique;
+    font-size: 3rem;
+    animation: logo-glow 5s linear infinite;
+}
