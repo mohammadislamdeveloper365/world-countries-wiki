@@ -1,8 +1,9 @@
 import React from 'react'
+import './Link.css'
 
 export default function Link({href, name}) {
   return (
-    <a href="" className="link">
+    <a href={href} className="link">
         {name}
     </a>
   )
